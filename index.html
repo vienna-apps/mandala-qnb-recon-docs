@@ -30,7 +30,35 @@
     letter-spacing: 0.02em;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    justify-content: space-between;
   }
+  .top-bar-downloads {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .btn-dl {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .btn-dl:hover { background: rgba(255,255,255,0.28); }
+  .btn-dl-alt {
+    background: rgba(37,99,235,0.55);
+    border-color: rgba(147,197,253,0.5);
+  }
+  .btn-dl-alt:hover { background: rgba(37,99,235,0.8); }
 
   /* ── Layout ── */
   #layout {
@@ -249,7 +277,13 @@
 </head>
 <body>
 
-<div id="top-bar">ATM Recon v2 &mdash; Reconciliation Type Documentation</div>
+<div id="top-bar">
+  <span>ATM Recon v2 &mdash; Reconciliation Type Documentation</span>
+  <div class="top-bar-downloads">
+    <a href="/Files_1_6-25-2026.zip" download class="btn-dl">&#11015; Files_1_6-25-2026.zip</a>
+    <a href="/Recon%20Revamp%20Data%20Mapping.xlsx" download class="btn-dl btn-dl-alt">&#11015; Recon Revamp Data Mapping.xlsx</a>
+  </div>
+</div>
 
 <div id="layout">
 
