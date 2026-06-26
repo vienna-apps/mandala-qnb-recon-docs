@@ -347,6 +347,11 @@
     <li><a href="#recon-retail-bonds">Retail Bonds</a></li>
   </ul>
 
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="#file-upload-reference">File Upload Reference</a></li>
+  </ul>
+
 </nav>
 
 <!-- ══════════════════════════════════════════════ MAIN ══════ -->
@@ -565,6 +570,18 @@
   </table>
   <p>Matched records display with both Bersama and Equation sides populated. Unmatched records show only one side; the other side fields are null. Filters: <code>startDate</code>, <code>endDate</code>, <code>transactionType</code>.</p>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-bersama.xhtml</code></td><td><code>MakeReconBersamaController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_BERSAMA</td><td><code>WEB-INF/include/new-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewBersamaController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -722,6 +739,17 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-gpn-bersama.xhtml</code></td><td><code>MakeReconGpnController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_GPN_BERSAMA_CORE</td><td><code>WEB-INF/include/new-gpn-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewGpnBersamaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -850,6 +878,17 @@
       <tr><td>Terminal ID</td><td>recon_tarik_tunai_atm_bersama</td><td>refNumberOrTerminalId</td><td></td></tr>
       <tr><td>Timestamp</td><td>recon_tarik_tunai_atm_bersama</td><td>trxTimestamp</td><td></td></tr>
       <tr><td>Status</td><td>recon_tarik_tunai_atm_bersama</td><td>status</td><td>MATCH / UNMATCH</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-tarik-tunai-atm-bersama.xhtml</code></td><td><code>MakeReconTarikTunaiAtmBersamaController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_TARIK_TUNAI_ATM_BERSAMA_CORE</td><td><code>WEB-INF/include/tarik-tunai-atm-bersama-file-upload.xhtml</code></td><td><code>UploadFileTarikTunaiAtmBersamaController</code></td></tr>
     </tbody>
   </table>
 
@@ -1009,6 +1048,16 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_TRANSFER_ATM_BERSAMA_CORE</td><td><code>WEB-INF/include/new-transfer-atm-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewTransferAtmBersamaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -1142,6 +1191,16 @@
       <tr><td>GL Account</td><td>glAccount</td><td></td></tr>
       <tr><td>Status</td><td>status</td><td>MATCH / UNMATCH</td></tr>
       <tr><td>Date</td><td>trxTimestamp</td><td>Filter: startDate / endDate</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_PEMBELIAN_PULSA_BERSAMA_CORE</td><td><code>WEB-INF/include/pembelian-pulsa-bersama-file-upload.xhtml</code></td><td><code>UploadFilePembelianPulsaBersamaController</code></td></tr>
     </tbody>
   </table>
 
@@ -1345,6 +1404,18 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-prima.xhtml</code></td><td><code>MakeReconPrimaController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_PRIMA</td><td><code>WEB-INF/include/new-prima-file-upload.xhtml</code></td><td><code>UploadFileNewPrimaController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -1433,6 +1504,17 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-gpn-prima.xhtml</code></td><td><code>MakeReconGpnPrimaController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_GPN_PRIMA_CORE</td><td><code>WEB-INF/include/new-gpn-prima-file-upload.xhtml</code></td><td><code>UploadFileNewGpnPrimaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -1501,6 +1583,17 @@
       <tr><td>Terminal ID</td><td>recon_tarik_tunai_atm_prima</td><td>refNumberOrTerminalId</td><td></td></tr>
       <tr><td>Timestamp</td><td>recon_tarik_tunai_atm_prima</td><td>trxTimestamp</td><td></td></tr>
       <tr><td>Status</td><td>recon_tarik_tunai_atm_prima</td><td>status</td><td>MATCH / UNMATCH</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-tarik-tunai-atm-prima.xhtml</code></td><td><code>MakeReconTarikTunaiAtmPrimaController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_TARIK_TUNAI_ATM_PRIMA_CORE</td><td><code>WEB-INF/include/tarik-tunai-atm-prima-file-upload.xhtml</code></td><td><code>UploadFileTarikTunaiAtmPrimaController</code></td></tr>
     </tbody>
   </table>
 
@@ -1660,6 +1753,16 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: NEW_TRANSFER_ATM_PRIMA_CORE</td><td><code>WEB-INF/include/new-transfer-atm-prima-file-upload.xhtml</code></td><td><code>UploadFileNewTransferAtmPrimaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -1799,6 +1902,16 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: BILLER_PRIMA</td><td><code>WEB-INF/include/biller-prima-file-upload.xhtml</code></td><td><code>UploadFileBillerPrimaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -1920,6 +2033,23 @@
     </tbody>
   </table>
   <p>Matched totals appear in matched section; unmatched categories with non-zero selisih require manual investigation before approval.</p>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-network.xhtml</code></td><td><code>MakeReconNetworkController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: BERSAMA</td><td><code>WEB-INF/include/bersama-file-upload.xhtml</code></td><td><code>UploadFileBersamaController</code></td></tr>
+      <tr><td>File: PRIMA</td><td><code>WEB-INF/include/prima-file-upload.xhtml</code></td><td><code>UploadFilePrimaController</code></td></tr>
+      <tr><td>File: IST</td><td><code>WEB-INF/include/ist-file-upload.xhtml</code></td><td><code>UploadFileIstController</code></td></tr>
+      <tr><td>File: EJ</td><td><code>WEB-INF/include/ej-file-upload.xhtml</code></td><td><code>UploadFileEjController</code></td></tr>
+      <tr><td>File: CIB</td><td><code>WEB-INF/include/cib-file-upload.xhtml</code></td><td><code>UploadFileCibController</code></td></tr>
+      <tr><td>File: RIB</td><td><code>WEB-INF/include/rib-file-upload.xhtml</code></td><td><code>UploadFileRibController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+    </tbody>
+  </table>
 
 </div>
 </section>
@@ -2222,6 +2352,22 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-bifast.xhtml</code></td><td><code>MakeReconBIFastController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: BI_FAST</td><td><code>WEB-INF/include/bifast-file-upload.xhtml</code></td><td><code>UploadFileBiFastController</code></td></tr>
+      <tr><td>File: IST</td><td><code>WEB-INF/include/ist-file-upload.xhtml</code></td><td><code>UploadFileIstController</code></td></tr>
+      <tr><td>File: QVA</td><td><code>WEB-INF/include/qva-file-upload.xhtml</code></td><td><code>UploadFileQvaController</code></td></tr>
+      <tr><td>File: QVA_BALANCE</td><td><code>WEB-INF/include/qva-balance-file-upload.xhtml</code></td><td><code>UploadFileQvaBalanceController</code></td></tr>
+      <tr><td>File: QVA_TRANSACTION</td><td><code>WEB-INF/include/qva-transaction-file-upload.xhtml</code></td><td><code>UploadFileQvaTransactionController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -2420,6 +2566,18 @@
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-billpayment.xhtml</code></td><td><code>MakeReconBillpaymentController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: BILLPAYMENT</td><td><code>WEB-INF/include/billpayment-file-upload.xhtml</code></td><td><code>UploadFileBillpaymentController</code></td></tr>
+      <tr><td>File: BILLER</td><td><code>WEB-INF/include/biller-file-upload.xhtml</code></td><td><code>UploadFileBillerController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -2593,6 +2751,17 @@
   </table>
   <p>Report also generates <strong>QRIS_TRX</strong> and <strong>QRIS_FEE</strong> posting entries for downstream accounting.</p>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-qris.xhtml</code></td><td><code>MakeReconQrisController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: QRIS</td><td><code>WEB-INF/include/qris-file-upload.xhtml</code></td><td><code>UploadFileQrisController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -2745,6 +2914,18 @@ reconIdEj    = SHA1( cardNumber[0:4] + cardNumber[12:16] + ":" + trace + ":" + a
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-on-us.xhtml</code></td><td><code>MakeReconOnUsController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: BERSAMA</td><td><code>WEB-INF/include/bersama-file-upload.xhtml</code></td><td><code>UploadFileBersamaController</code></td></tr>
+      <tr><td>File: PRIMA</td><td><code>WEB-INF/include/prima-file-upload.xhtml</code></td><td><code>UploadFilePrimaController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -2883,6 +3064,18 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-purchase.xhtml</code></td><td><code>MakeReconPurchaseController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+      <tr><td>File: KAPITY_EXTRACT</td><td><code>WEB-INF/include/kapity-file-upload.xhtml</code></td><td><code>UploadFileKapityController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -2996,6 +3189,19 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-visa-detail.xhtml</code></td><td><code>MakeReconVisaDetailController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: VISA</td><td><code>WEB-INF/include/visa-file-upload.xhtml</code></td><td><code>UploadFileVisaController</code></td></tr>
+      <tr><td>File: KAPITY_EXTRACT</td><td><code>WEB-INF/include/kapity-file-upload.xhtml</code></td><td><code>UploadFileKapityController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -3094,6 +3300,19 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-payment.xhtml</code></td><td><code>MakeReconPaymentController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: CORE_BANKING</td><td><code>WEB-INF/include/core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+      <tr><td>File: QVA</td><td><code>WEB-INF/include/qva-file-upload.xhtml</code></td><td><code>UploadFileQvaController</code></td></tr>
+      <tr><td>File: KAPITY_EXTRACT</td><td><code>WEB-INF/include/kapity-file-upload.xhtml</code></td><td><code>UploadFileKapityController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -3169,6 +3388,17 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>Selisih (Difference)</td><td>selisih</td></tr>
       <tr><td>Status</td><td>MATCH / UNMATCH</td></tr>
       <tr><td>Date</td><td>batchingDate — Filter: date range</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-qva-balance.xhtml</code></td><td><code>MakeReconQvaBalanceController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: QVA_BALANCE</td><td><code>WEB-INF/include/qva-balance-file-upload.xhtml</code></td><td><code>UploadFileQvaBalanceController</code></td></tr>
     </tbody>
   </table>
 
@@ -3264,6 +3494,18 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>Transaction Ref</td><td>trxRefNumber / reference</td></tr>
       <tr><td>Amount</td><td>amount (IDR)</td></tr>
       <tr><td>Match Status</td><td>reconStatus</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-qva-transaction.xhtml</code></td><td><code>MakeReconQvaTransactionController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: QVA_TRANSACTION</td><td><code>WEB-INF/include/qva-transaction-file-upload.xhtml</code></td><td><code>UploadFileQvaTransactionController</code></td></tr>
+      <tr><td>File: QVA</td><td><code>WEB-INF/include/qva-file-upload.xhtml</code></td><td><code>UploadFileQvaController</code></td></tr>
     </tbody>
   </table>
 
@@ -3366,6 +3608,17 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-recon-skn-equation.xhtml</code></td><td><code>MakeReconSknEquationController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: SKN_EQUATION</td><td><code>WEB-INF/include/skn-equation-file-upload.xhtml</code></td><td><code>UploadFileSknEquationController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -3462,6 +3715,16 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>Outgoing File</td><td>rtgsOutgoingFile (boolean)</td></tr>
       <tr><td>Equation File</td><td>equationFile (boolean)</td></tr>
       <tr><td>Status</td><td>MATCH / UNMATCH</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: RTGS</td><td><code>WEB-INF/include/rtgs-file-upload.xhtml</code></td><td><code>UploadFileRtgsController</code></td></tr>
     </tbody>
   </table>
 
@@ -3612,6 +3875,17 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-custom-recon.xhtml</code></td><td><code>MakeCustomReconController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: Custom Recon</td><td><code>WEB-INF/include/custom-recon-file-upload.xhtml</code></td><td><code>UploadFileCustomReconController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -3715,6 +3989,17 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Make Recon</td><td><code>recon/make-custom-recon.xhtml</code></td><td><code>MakeCustomReconController</code></td></tr>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: Custom Recon</td><td><code>WEB-INF/include/custom-recon-file-upload.xhtml</code></td><td><code>UploadFileCustomReconController</code></td></tr>
+    </tbody>
+  </table>
+
 </div>
 </section>
 
@@ -3803,6 +4088,131 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>WMS Deal Date</td><td>wmsDealDate</td></tr>
       <tr><td>Kepemilikan (Difference)</td><td>kepemilikan — positive = OPICS excess, negative = WMS excess</td></tr>
       <tr><td>File Date Range</td><td>fileStartDate – fileEndDate</td></tr>
+    </tbody>
+  </table>
+
+  <!-- V. File Upload Backing Classes -->
+  <div class="sub-heading">V. File Upload Backing Classes</div>
+  <table>
+    <thead><tr><th>Role</th><th>XHTML</th><th>Controller (Java)</th></tr></thead>
+    <tbody>
+      <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
+      <tr><td>File: RETAIL_BONDS</td><td><code>WEB-INF/include/retail-bonds-file-upload.xhtml</code></td><td><code>UploadFileRetailBondsController</code></td></tr>
+    </tbody>
+  </table>
+
+</div>
+</section>
+
+<!-- ═══════════════════════════════════ FILE UPLOAD REFERENCE ═══════════ -->
+<section id="file-upload-reference">
+<h2>File Upload Reference <small style="font-size:13px;font-weight:400;opacity:0.8">(All Types)</small></h2>
+<div>
+
+  <div class="sub-heading">Architecture Overview</div>
+  <p>All file uploads go through a single central page: <code>file/upload-recon-file.xhtml</code> backed by <code>UploadReconFileController</code>. Based on the selected file type, a specific fragment (<code>WEB-INF/include/*-file-upload.xhtml</code>) is conditionally rendered, each backed by its own <code>UploadFile*Controller</code>.</p>
+
+  <div class="sub-heading">Recon Type → Make Recon Page</div>
+  <table>
+    <thead><tr><th>Recon Type</th><th>Make Recon XHTML</th><th>Make Recon Controller</th></tr></thead>
+    <tbody>
+      <tr><td>NEW_BERSAMA</td><td><code>recon/make-recon-bersama.xhtml</code></td><td><code>MakeReconBersamaController</code></td></tr>
+      <tr><td>GPN_BERSAMA</td><td><code>recon/make-recon-gpn-bersama.xhtml</code></td><td><code>MakeReconGpnController</code></td></tr>
+      <tr><td>TARIK_TUNAI_ATM_BERSAMA</td><td><code>recon/make-recon-tarik-tunai-atm-bersama.xhtml</code></td><td><code>MakeReconTarikTunaiAtmBersamaController</code></td></tr>
+      <tr><td>NEW_TRANSFER_ATM_BERSAMA</td><td colspan="2"><em>Upload-only — no dedicated make-recon page</em></td></tr>
+      <tr><td>PEMBELIAN_PULSA_BERSAMA</td><td colspan="2"><em>Upload-only — no dedicated make-recon page</em></td></tr>
+      <tr><td>NEW_PRIMA</td><td><code>recon/make-recon-prima.xhtml</code></td><td><code>MakeReconPrimaController</code></td></tr>
+      <tr><td>GPN_PRIMA</td><td><code>recon/make-recon-gpn-prima.xhtml</code></td><td><code>MakeReconGpnPrimaController</code></td></tr>
+      <tr><td>TARIK_TUNAI_ATM_PRIMA</td><td><code>recon/make-recon-tarik-tunai-atm-prima.xhtml</code></td><td><code>MakeReconTarikTunaiAtmPrimaController</code></td></tr>
+      <tr><td>NEW_TRANSFER_ATM_PRIMA</td><td colspan="2"><em>Upload-only — no dedicated make-recon page</em></td></tr>
+      <tr><td>BILLER_PRIMA</td><td colspan="2"><em>Upload-only — no dedicated make-recon page</em></td></tr>
+      <tr><td>NETWORK</td><td><code>recon/make-recon-network.xhtml</code></td><td><code>MakeReconNetworkController</code></td></tr>
+      <tr><td>BI_FAST</td><td><code>recon/make-recon-bifast.xhtml</code></td><td><code>MakeReconBIFastController</code></td></tr>
+      <tr><td>BILLPAYMENT (all subtypes)</td><td><code>recon/make-recon-billpayment.xhtml</code></td><td><code>MakeReconBillpaymentController</code></td></tr>
+      <tr><td>QRIS</td><td><code>recon/make-recon-qris.xhtml</code></td><td><code>MakeReconQrisController</code></td></tr>
+      <tr><td>ON_US</td><td><code>recon/make-recon-on-us.xhtml</code></td><td><code>MakeReconOnUsController</code></td></tr>
+      <tr><td>PURCHASE</td><td><code>recon/make-recon-purchase.xhtml</code></td><td><code>MakeReconPurchaseController</code></td></tr>
+      <tr><td>VISA_DETAIL</td><td><code>recon/make-recon-visa-detail.xhtml</code></td><td><code>MakeReconVisaDetailController</code></td></tr>
+      <tr><td>PAYMENT</td><td><code>recon/make-recon-payment.xhtml</code></td><td><code>MakeReconPaymentController</code></td></tr>
+      <tr><td>QVA_BALANCE</td><td><code>recon/make-recon-qva-balance.xhtml</code></td><td><code>MakeReconQvaBalanceController</code></td></tr>
+      <tr><td>QVA_TRANSACTION</td><td><code>recon/make-recon-qva-transaction.xhtml</code></td><td><code>MakeReconQvaTransactionController</code></td></tr>
+      <tr><td>SKN_EQUATION</td><td><code>recon/make-recon-skn-equation.xhtml</code></td><td><code>MakeReconSknEquationController</code></td></tr>
+      <tr><td>RTGS</td><td colspan="2"><em>Upload-only — RtgsEquationFileService</em></td></tr>
+      <tr><td>CUSTOM_NOSTRO_STATEMENT</td><td><code>recon/make-custom-recon.xhtml</code></td><td><code>MakeCustomReconController</code></td></tr>
+      <tr><td>CUSTOM_NOSTRO_MT950_EQ</td><td><code>recon/make-custom-recon.xhtml</code></td><td><code>MakeCustomReconController</code></td></tr>
+      <tr><td>RETAIL_BONDS</td><td colspan="2"><em>Upload-only — no dedicated make-recon page</em></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-heading">File Type → Upload Fragment → Controller</div>
+  <p>All fragments are included conditionally in <code>file/upload-recon-file.xhtml</code> via <code>&lt;c:if test=&quot;#{uploadReconFileController.fileType eq 'TYPE'}&quot;&gt;</code>.</p>
+  <table>
+    <thead><tr><th>FileType (c:if value)</th><th>XHTML Fragment (WEB-INF/include/)</th><th>Backing Controller</th></tr></thead>
+    <tbody>
+      <tr><td><code>NEW_BERSAMA</code></td><td><code>new-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewBersamaController</code></td></tr>
+      <tr><td><code>BERSAMA</code></td><td><code>bersama-file-upload.xhtml</code></td><td><code>UploadFileBersamaController</code></td></tr>
+      <tr><td><code>NEW_GPN_BERSAMA_CORE</code></td><td><code>new-gpn-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewGpnBersamaController</code></td></tr>
+      <tr><td><code>NEW_TARIK_TUNAI_ATM_BERSAMA_CORE</code></td><td><code>tarik-tunai-atm-bersama-file-upload.xhtml</code></td><td><code>UploadFileTarikTunaiAtmBersamaController</code></td></tr>
+      <tr><td><code>NEW_TRANSFER_ATM_BERSAMA_CORE</code></td><td><code>new-transfer-atm-bersama-file-upload.xhtml</code></td><td><code>UploadFileNewTransferAtmBersamaController</code></td></tr>
+      <tr><td><code>NEW_PEMBELIAN_PULSA_BERSAMA_CORE</code></td><td><code>pembelian-pulsa-bersama-file-upload.xhtml</code></td><td><code>UploadFilePembelianPulsaBersamaController</code></td></tr>
+      <tr><td><code>NEW_PRIMA</code></td><td><code>new-prima-file-upload.xhtml</code></td><td><code>UploadFileNewPrimaController</code></td></tr>
+      <tr><td><code>PRIMA</code></td><td><code>prima-file-upload.xhtml</code></td><td><code>UploadFilePrimaController</code></td></tr>
+      <tr><td><code>NEW_GPN_PRIMA_CORE</code></td><td><code>new-gpn-prima-file-upload.xhtml</code></td><td><code>UploadFileNewGpnPrimaController</code></td></tr>
+      <tr><td><code>NEW_TARIK_TUNAI_ATM_PRIMA_CORE</code></td><td><code>tarik-tunai-atm-prima-file-upload.xhtml</code></td><td><code>UploadFileTarikTunaiAtmPrimaController</code></td></tr>
+      <tr><td><code>NEW_TRANSFER_ATM_PRIMA_CORE</code></td><td><code>new-transfer-atm-prima-file-upload.xhtml</code></td><td><code>UploadFileNewTransferAtmPrimaController</code></td></tr>
+      <tr><td><code>BILLER_PRIMA</code></td><td><code>biller-prima-file-upload.xhtml</code></td><td><code>UploadFileBillerPrimaController</code></td></tr>
+      <tr><td><code>BI_FAST</code></td><td><code>bifast-file-upload.xhtml</code></td><td><code>UploadFileBiFastController</code></td></tr>
+      <tr><td><code>IST</code></td><td><code>ist-file-upload.xhtml</code></td><td><code>UploadFileIstController</code></td></tr>
+      <tr><td><code>QVA</code></td><td><code>qva-file-upload.xhtml</code></td><td><code>UploadFileQvaController</code></td></tr>
+      <tr><td><code>QVA_BALANCE</code></td><td><code>qva-balance-file-upload.xhtml</code></td><td><code>UploadFileQvaBalanceController</code></td></tr>
+      <tr><td><code>QVA_TRANSACTION</code></td><td><code>qva-transaction-file-upload.xhtml</code></td><td><code>UploadFileQvaTransactionController</code></td></tr>
+      <tr><td><code>BILLPAYMENT</code></td><td><code>billpayment-file-upload.xhtml</code></td><td><code>UploadFileBillpaymentController</code></td></tr>
+      <tr><td><code>BILLER</code></td><td><code>biller-file-upload.xhtml</code></td><td><code>UploadFileBillerController</code></td></tr>
+      <tr><td><code>QRIS</code></td><td><code>qris-file-upload.xhtml</code></td><td><code>UploadFileQrisController</code></td></tr>
+      <tr><td><code>VISA</code></td><td><code>visa-file-upload.xhtml</code></td><td><code>UploadFileVisaController</code></td></tr>
+      <tr><td><code>KAPITY_EXTRACT</code></td><td><code>kapity-file-upload.xhtml</code></td><td><code>UploadFileKapityController</code></td></tr>
+      <tr><td><code>CORE_BANKING</code></td><td><code>core-banking-file-upload.xhtml</code></td><td><code>UploadFileCoreBankingController</code></td></tr>
+      <tr><td><code>EJ</code></td><td><code>ej-file-upload.xhtml</code></td><td><code>UploadFileEjController</code></td></tr>
+      <tr><td><code>CIB</code></td><td><code>cib-file-upload.xhtml</code></td><td><code>UploadFileCibController</code></td></tr>
+      <tr><td><code>RIB</code></td><td><code>rib-file-upload.xhtml</code></td><td><code>UploadFileRibController</code></td></tr>
+      <tr><td><code>SKN_EQUATION</code></td><td><code>skn-equation-file-upload.xhtml</code></td><td><code>UploadFileSknEquationController</code></td></tr>
+      <tr><td><code>RTGS</code></td><td><code>rtgs-file-upload.xhtml</code></td><td><code>UploadFileRtgsController</code></td></tr>
+      <tr><td><code>RETAIL_BONDS</code></td><td><code>retail-bonds-file-upload.xhtml</code></td><td><code>UploadFileRetailBondsController</code></td></tr>
+      <tr><td><code>isCustomRecon()</code></td><td><code>custom-recon-file-upload.xhtml</code></td><td><code>UploadFileCustomReconController</code></td></tr>
+      <tr><td><code>JURNAL_PENYELESAIAN_BERSAMA</code></td><td><code>jurnal-bersama-file-upload.xhtml</code></td><td><code>UploadFileJurnalBersamaController</code></td></tr>
+      <tr><td><code>JURNAL_PENYELESAIAN_PRIMA</code></td><td><code>jurnal-prima-file-upload.xhtml</code></td><td><code>UploadFileJurnalPrimaController</code></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sub-heading">Shared File Types by Recon Type</div>
+  <table>
+    <thead><tr><th>Recon Type</th><th>Required File Types</th></tr></thead>
+    <tbody>
+      <tr><td>NEW_BERSAMA</td><td><code>NEW_BERSAMA</code>, <code>CORE_BANKING</code></td></tr>
+      <tr><td>GPN_BERSAMA</td><td><code>NEW_GPN_BERSAMA_CORE</code></td></tr>
+      <tr><td>TARIK_TUNAI_ATM_BERSAMA</td><td><code>NEW_TARIK_TUNAI_ATM_BERSAMA_CORE</code></td></tr>
+      <tr><td>NEW_TRANSFER_ATM_BERSAMA</td><td><code>NEW_TRANSFER_ATM_BERSAMA_CORE</code></td></tr>
+      <tr><td>PEMBELIAN_PULSA_BERSAMA</td><td><code>NEW_PEMBELIAN_PULSA_BERSAMA_CORE</code></td></tr>
+      <tr><td>NEW_PRIMA</td><td><code>NEW_PRIMA</code>, <code>CORE_BANKING</code></td></tr>
+      <tr><td>GPN_PRIMA</td><td><code>NEW_GPN_PRIMA_CORE</code></td></tr>
+      <tr><td>TARIK_TUNAI_ATM_PRIMA</td><td><code>NEW_TARIK_TUNAI_ATM_PRIMA_CORE</code></td></tr>
+      <tr><td>NEW_TRANSFER_ATM_PRIMA</td><td><code>NEW_TRANSFER_ATM_PRIMA_CORE</code></td></tr>
+      <tr><td>BILLER_PRIMA</td><td><code>BILLER_PRIMA</code></td></tr>
+      <tr><td>NETWORK</td><td><code>BERSAMA</code>, <code>PRIMA</code>, <code>IST</code>, <code>EJ</code>, <code>CIB</code>, <code>RIB</code>, <code>CORE_BANKING</code></td></tr>
+      <tr><td>BI_FAST</td><td><code>BI_FAST</code>, <code>IST</code>, <code>QVA</code>, <code>QVA_BALANCE</code>, <code>QVA_TRANSACTION</code>, <code>CORE_BANKING</code></td></tr>
+      <tr><td>BILLPAYMENT (all subtypes)</td><td><code>BILLPAYMENT</code>, <code>BILLER</code></td></tr>
+      <tr><td>QRIS</td><td><code>QRIS</code></td></tr>
+      <tr><td>ON_US</td><td><code>BERSAMA</code>, <code>PRIMA</code></td></tr>
+      <tr><td>PURCHASE</td><td><code>CORE_BANKING</code>, <code>KAPITY_EXTRACT</code></td></tr>
+      <tr><td>VISA_DETAIL</td><td><code>VISA</code>, <code>KAPITY_EXTRACT</code>, <code>CORE_BANKING</code></td></tr>
+      <tr><td>PAYMENT</td><td><code>CORE_BANKING</code>, <code>QVA</code>, <code>KAPITY_EXTRACT</code></td></tr>
+      <tr><td>QVA_BALANCE</td><td><code>QVA_BALANCE</code></td></tr>
+      <tr><td>QVA_TRANSACTION</td><td><code>QVA_TRANSACTION</code>, <code>QVA</code></td></tr>
+      <tr><td>SKN_EQUATION</td><td><code>SKN_EQUATION</code></td></tr>
+      <tr><td>RTGS</td><td><code>RTGS</code></td></tr>
+      <tr><td>CUSTOM_NOSTRO_STATEMENT</td><td>Custom Recon upload</td></tr>
+      <tr><td>CUSTOM_NOSTRO_MT950_EQ</td><td>Custom Recon upload</td></tr>
+      <tr><td>RETAIL_BONDS</td><td><code>RETAIL_BONDS</code></td></tr>
     </tbody>
   </table>
 
