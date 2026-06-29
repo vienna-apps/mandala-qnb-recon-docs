@@ -1916,6 +1916,7 @@
     <tbody>
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: BILLER_PRIMA</td><td><code>WEB-INF/include/biller-prima-file-upload.xhtml</code></td><td><code>UploadFileBillerPrimaController</code></td></tr>
+      <tr><td>SFTP / Local auto-fetch</td><td colspan="2">Files auto-fetched from <code>sftp_config</code> rows where <code>recon_type = 'BILLER_PRIMA'</code>. Supports both <code>host = 'LOCAL'</code> (local filesystem) and real SFTP host. Trigger: <code>UploadFileBillerPrimaController.fetchAndUploadFiles()</code></td></tr>
     </tbody>
   </table>
 
@@ -2581,6 +2582,7 @@
       <tr><td>Make Recon</td><td><code>recon/make-recon-billpayment.xhtml</code></td><td><code>MakeReconBillpaymentController</code></td></tr>
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: BILLPAYMENT</td><td><code>WEB-INF/include/billpayment-file-upload.xhtml</code></td><td><code>UploadFileBillpaymentController</code></td></tr>
+      <tr><td>SFTP fetch (legacy)</td><td colspan="2">Files fetched via <code>SftpService.connectToSftp(date, "BILLPAYMENT")</code> — reads from <code>ftp_upload</code> table row <code>id = "BILLPAYMENT"</code>. Trigger: <code>getFileFromSftp()</code> button on upload page.</td></tr>
       <tr><td>File: BILLER</td><td><code>WEB-INF/include/biller-file-upload.xhtml</code></td><td><code>UploadFileBillerController</code></td></tr>
     </tbody>
   </table>
@@ -2766,6 +2768,7 @@
       <tr><td>Make Recon</td><td><code>recon/make-recon-qris.xhtml</code></td><td><code>MakeReconQrisController</code></td></tr>
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: QRIS</td><td><code>WEB-INF/include/qris-file-upload.xhtml</code></td><td><code>UploadFileQrisController</code></td></tr>
+      <tr><td>SFTP fetch (legacy)</td><td colspan="2">Files fetched via <code>SftpService.connectToSftp(date, "QRIS")</code> — reads from <code>ftp_upload</code> table row <code>id = "QRIS"</code>. Trigger: <code>getFileFromFtp()</code> button on upload page.</td></tr>
     </tbody>
   </table>
 
@@ -3513,6 +3516,7 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: QVA_TRANSACTION</td><td><code>WEB-INF/include/qva-transaction-file-upload.xhtml</code></td><td><code>UploadFileQvaTransactionController</code></td></tr>
       <tr><td>File: QVA</td><td><code>WEB-INF/include/qva-file-upload.xhtml</code></td><td><code>UploadFileQvaController</code></td></tr>
+      <tr><td>SFTP fetch (legacy)</td><td colspan="2">Files fetched via <code>SftpService.connectToSftp(date, "QVA_DETAIL_TRANSACTION")</code> — reads from <code>ftp_upload</code> table row <code>id = "QVA_DETAIL_TRANSACTION"</code>. Trigger: <code>getFileFromSftp()</code> button on upload page.</td></tr>
     </tbody>
   </table>
 
@@ -3623,6 +3627,7 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>Make Recon</td><td><code>recon/make-recon-skn-equation.xhtml</code></td><td><code>MakeReconSknEquationController</code></td></tr>
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: SKN_EQUATION</td><td><code>WEB-INF/include/skn-equation-file-upload.xhtml</code></td><td><code>UploadFileSknEquationController</code></td></tr>
+      <tr><td>SFTP / Local auto-fetch</td><td colspan="2">Files auto-fetched from <code>sftp_config</code> rows where <code>recon_type = 'SKN_EQUATION'</code>. Trigger: <code>UploadFileSknEquationController.fetchAndUploadFiles()</code></td></tr>
     </tbody>
   </table>
 
@@ -3732,6 +3737,7 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     <tbody>
       <tr><td>Central Upload</td><td><code>file/upload-recon-file.xhtml</code></td><td><code>UploadReconFileController</code></td></tr>
       <tr><td>File: RTGS</td><td><code>WEB-INF/include/rtgs-file-upload.xhtml</code></td><td><code>UploadFileRtgsController</code></td></tr>
+      <tr><td>SFTP / Local auto-fetch</td><td colspan="2">Files auto-fetched from <code>sftp_config</code> rows where <code>recon_type = 'RTGS'</code>. Trigger: <code>UploadFileRtgsController.fetchAndUploadFiles()</code></td></tr>
     </tbody>
   </table>
 
@@ -4225,8 +4231,8 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
     </tbody>
   </table>
 
-  <div class="sub-heading">SFTP Config (<code>sftp_config</code> table)</div>
-  <p>The <code>sftp_config</code> table drives two distinct file-fetch mechanisms:</p>
+  <div class="sub-heading">SFTP / FTP Config</div>
+  <p>There are <strong>three mechanisms</strong> for fetching files from SFTP/local paths, using <strong>two separate config tables</strong>:</p>
 
   <p><strong>1. Auto-fetch for Custom Recon (Nostro types) — <code>UploadFileCustomReconController</code></strong></p>
   <p>When a user manually uploads a file for a Custom Recon type, <code>autoFetchMissingConfiguredRoles()</code> is triggered automatically. It queries <code>sftp_config</code> by <code>recon_code</code> + <code>file_role</code> and fetches any remaining required file roles (e.g. DWH balance files) without user interaction. <code>fetchAndUploadConfiguredRoles()</code> is also called at upload submission time.</p>
@@ -4260,6 +4266,29 @@ reconIdCb = SHA1( cardNumber[0:16] + ":" + trace + ":" + amount )   -- for core 
       <tr><td>PEMBELIAN_PULSA_BERSAMA</td><td><code>PEMBELIAN_PULSA_BERSAMA_OPT_PATH</code></td><td><code>UploadFilePembelianPulsaBersamaController</code></td></tr>
     </tbody>
   </table>
+
+  <p style="margin-top:14px"><strong>3. DWH/counterparty auto-fetch for standard recon types — keyed by <code>recon_type</code></strong></p>
+  <p>These controllers query <code>sftp_config</code> by <code>recon_type</code> column (matching the <code>ReconType</code> enum name) and fetch files from local path or SFTP. Unlike the Custom Recon mechanism, this is triggered by a user clicking "Fetch from SFTP" on the upload page, not automatically.</p>
+  <table>
+    <thead><tr><th>Recon Type</th><th>sftp_config recon_type value</th><th>Upload Controller</th></tr></thead>
+    <tbody>
+      <tr><td>BILLER_PRIMA</td><td><code>"BILLER_PRIMA"</code></td><td><code>UploadFileBillerPrimaController</code> — <code>fetchAndUploadFiles()</code></td></tr>
+      <tr><td>RTGS</td><td><code>"RTGS"</code></td><td><code>UploadFileRtgsController</code> — <code>fetchAndUploadFiles()</code></td></tr>
+      <tr><td>SKN_EQUATION</td><td><code>"SKN_EQUATION"</code></td><td><code>UploadFileSknEquationController</code> — <code>fetchAndUploadFiles()</code></td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:14px"><strong>4. Legacy SFTP fetch — <code>ftp_upload</code> table via <code>SftpService</code></strong></p>
+  <p>An older mechanism using a separate <code>ftp_upload</code> config table (not <code>sftp_config</code>). The controller calls <code>SftpService.connectToSftp(dateString, id)</code> where <code>id</code> is the primary key in the <code>ftp_upload</code> table. Triggered by a "Fetch from SFTP" or "Get File from FTP" button on the upload page.</p>
+  <table>
+    <thead><tr><th>Recon Type</th><th>ftp_upload id</th><th>Upload Controller</th><th>Method</th></tr></thead>
+    <tbody>
+      <tr><td>QRIS</td><td><code>"QRIS"</code></td><td><code>UploadFileQrisController</code></td><td><code>getFileFromFtp()</code></td></tr>
+      <tr><td>BILLPAYMENT</td><td><code>"BILLPAYMENT"</code></td><td><code>UploadFileBillpaymentController</code></td><td><code>getFileFromSftp()</code></td></tr>
+      <tr><td>QVA_TRANSACTION</td><td><code>"QVA_DETAIL_TRANSACTION"</code></td><td><code>UploadFileQvaTransactionController</code></td><td><code>getFileFromSftp()</code></td></tr>
+    </tbody>
+  </table>
+  <p><strong>BI_FAST</strong> — no SFTP integration in the upload controller. Files must be uploaded manually via the UI.</p>
 
 </div>
 </section>
